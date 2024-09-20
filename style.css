@@ -23,8 +23,8 @@
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--background-color);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif , Arial, Helvetica, sans-serif;
+    /* background-color: var(--background-color); */
     color: var(--text-color);
 }
 
@@ -785,7 +785,7 @@ body {
        grid-template-columns: 1fr;
     }
  }
- 
+
  .container1 {
    
     margin: 0 auto;
@@ -810,6 +810,7 @@ body {
     background-color: white;
     padding: 1.5rem;
     border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .user-info {
@@ -855,13 +856,14 @@ body {
 }
 
 a {
-    color: pink;
+    color: #007BFF;
     text-decoration: none;
 }
 
 a:hover {
     text-decoration: underline;
 }
+
 /* Section Wrapper */
 .section-hero {
     position: relative;
@@ -1054,7 +1056,8 @@ a:hover {
     .bg-image {
         display: none; /* Hide background on mobile */
     }
-} 
+}
+
 
 .relative-wrapper {
     position: relative;
@@ -1201,6 +1204,7 @@ a:hover {
     }
 }
 
+
 .appwrite-footer {
     background:linear-gradient(90deg ,#110d0d, #dda4ad , #87081b,#110d0d) ;
     color: #fff;
@@ -1306,4 +1310,376 @@ a:hover {
   .footer-policies li a:hover {
     color: #fff;
   }
+
   
+
+
+
+  /* Default styles for all devices */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Apply attractive hover effects for buttons */
+button, .btn {
+    
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, .btn:hover {
+    background-color: var(--primary-hover-color);
+    transform: scale(1.05);
+}
+
+/* Headings and text styling */
+h1, h2, h3 {
+    color: var(--primary-color);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #b0b0b0;
+    margin-bottom: 1rem;
+}
+
+/* Container layout improvements */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Media Queries */
+
+/* Large desktops */
+@media (min-width: 1600px) {
+    body {
+        font-size: 18px;
+    }
+    .navbar {
+        padding: 25px 80px;
+    }
+    h1 {
+        font-size: 3.5rem;
+    }
+    .btn {
+        padding: 14px 30px;
+    }
+}
+
+/* Small desktops */
+@media (min-width: 1441px) and (max-width: 1599px) {
+    body {
+        font-size: 16px;
+    }
+    .navbar {
+        padding: 20px 60px;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    .btn {
+        padding: 12px 28px;
+    }
+}
+
+/* Medium laptops */
+@media (min-width: 1280px) and (max-width: 1440px) {
+    body {
+        font-size: 15px;
+    }
+    .navbar {
+        padding: 20px 50px;
+    }
+    h1 {
+        font-size: 2.8rem;
+    }
+    .btn {
+        padding: 12px 26px;
+    }
+}
+
+/* Small laptops */
+@media (min-width: 1025px) and (max-width: 1279px) {
+    body {
+        font-size: 14px;
+    }
+    .navbar {
+        padding: 15px 40px;
+    }
+    h1 {
+        font-size: 2.6rem;
+    }
+    .btn {
+        padding: 10px 24px;
+    }
+}
+
+/* Large tablets */
+@media (min-width: 992px) and (max-width: 1024px) {
+    body {
+        font-size: 13px;
+    }
+    .navbar {
+        padding: 15px 30px;
+    }
+    h1 {
+        font-size: 2.4rem;
+    }
+    .btn {
+        padding: 10px 22px;
+    }
+}
+
+/* Small tablets */
+@media (min-width: 768px) and (max-width: 991px) {
+    body {
+        font-size: 12px;
+    }
+    .navbar {
+        padding: 15px 20px;
+        flex-direction: column;
+    }
+    h1 {
+        font-size: 2.2rem;
+    }
+    .btn {
+        padding: 10px 20px;
+    }
+}
+
+/* Medium mobile screens */
+@media (min-width: 480px) and (max-width: 767px) {
+    body {
+        font-size: 11px;
+    }
+    .navbar {
+        padding: 10px;
+    }
+    h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+    .appwrite-section {
+        padding: 40px;
+        flex-direction: column;
+    }
+    .btn {
+        padding: 8px 18px;
+        font-size: 1rem;
+    }
+}
+
+/* Small mobile screens */
+@media (max-width: 479px) {
+    body {
+        font-size: 10px;
+    }
+    .navbar {
+        padding: 5px;
+        flex-direction: column;
+        text-align: center;
+    }
+    h1 {
+        font-size: 1.8rem;
+        text-align: center;
+    }
+    .appwrite-section {
+        padding: 30px;
+    }
+    .btn {
+        padding: 8px 16px;
+        font-size: 0.9rem;
+    }
+}
+
+/* Transitions for smoothness */
+.nav-links a, .btn {
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+}
+
+/* Add subtle animations for hover effects */
+.nav-links a:hover {
+    color: var(--primary-color);
+    transform: translateY(-2px);
+}
+
+/* General Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1e1e1e;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 30px;
+    background-color: #1e1e1e; /* Dark background */
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .logo {
+    font-size: 24px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+    color: #f05454; /* Hover color for links */
+}
+
+/* Sign-up and Get Started Buttons */
+.navbar .cta-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.navbar .cta-buttons .btn-signup,
+.navbar .cta-buttons .btn-get-started {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-signup {
+    background-color: transparent;
+    border: 1px solid #f05454;
+    color: #f05454;
+}
+
+.btn-signup:hover {
+    background-color: #f05454;
+    color: #fff;
+}
+
+.btn-get-started {
+    background-color: #f05454;
+    color: #fff;
+}
+
+.btn-get-started:hover {
+    background-color: #d93b3b;
+}
+
+/* Menu icon for mobile */
+.navbar .menu-icon {
+    display: none;
+    font-size: 28px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Collapsible Menu for Small Screens */
+.navbar .menu {
+    display: none;
+    position: absolute;
+    top: 70px; /* Below the navbar */
+    right: 0;
+    width: 100%;
+    background-color: #1e1e1e;
+    padding: 20px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.navbar .menu ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar .menu ul li {
+    padding: 15px 0;
+}
+
+.navbar .menu ul li a {
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    padding: 10px 20px;
+}
+
+.navbar .menu ul li a:hover {
+    background-color: #f05454;
+    color: #fff;
+    border-radius: 8px;
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .nav-links,
+    .cta-buttons {
+        display: none; /* Hide on smaller screens */
+    }
+
+    .navbar .menu-icon {
+        display: block;
+    }
+
+    .navbar .menu {
+        display: none;
+    }
+}
+
+/* For smaller devices, the menu will be displayed */
+@media (max-width: 768px) {
+    .navbar .menu ul li a {
+        font-size: 16px;
+    }
+
+    .navbar .menu ul li {
+        padding: 10px 0;
+    }
+
+    .navbar .menu {
+        width: 100%;
+        text-align: left;
+    }
+}
