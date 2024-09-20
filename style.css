@@ -1200,3 +1200,110 @@ a:hover {
         font-size: 2.5rem;
     }
 }
+
+.appwrite-footer {
+    background:linear-gradient(90deg ,#110d0d, #dda4ad , #87081b,#110d0d) ;
+    color: #fff;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content */
+  }
+  
+  .footer-logo {
+    margin-bottom: 20px; /* Space between logo and content */
+  }
+  
+  .footer-content {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 1200px;
+    margin-bottom: 30px; /* Space between sections and social icons */
+  }
+  
+  .footer-section {
+    flex: 1;
+    padding: 0 15px;
+  }
+  
+  .footer-title {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+  
+  .footer-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-section ul li a {
+    color: #bbb;
+    text-decoration: none;
+  }
+  
+  .footer-section ul li a:hover {
+    color: #fff;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    padding-top: 20px;
+    border-top: 1px solid #333;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center; /* Center icons horizontally */
+    gap: 25px; /* Spacing between icons */
+    margin-bottom: 20px; /* Space between icons and copyright */
+  }
+  
+  .social-links li {
+    list-style: none;
+  }
+  
+  .social-links a {
+    color: #bbb;
+    font-size: 24px; /* Icon size */
+    transition: color 0.3s ease; /* Smooth color transition */
+  }
+  
+  .social-links a:hover {
+    color: #fff; /* Change color on hover */
+  }
+  
+  .footer-copyright {
+    display: inline-block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #888;
+  }
+  
+  .footer-policies {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .footer-policies li {
+    list-style: none;
+  }
+  
+  .footer-policies li a {
+    color: #bbb;
+    font-size: 14px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-policies li a:hover {
+    color: #fff;
+  }
+  
