@@ -861,5 +861,117 @@ a {
 a:hover {
     text-decoration: underline;
 }
+/* Section Wrapper */
+.section-hero {
+    position: relative;
+    padding-top: 10rem;
+    overflow: hidden;
+}
+
+/* Background Image */
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 30%;
+    transform: translateX(150px);
+    z-index: -1;
+    
+}
+
+.background-img {
+    width: 650px;
+    height: 700px;
+    display: block;
+    border-radius: 50%;
+}
+
+/* Content Wrapper */
+.content-wrapper1 {
+    padding-top: 7.5rem;
+    padding-bottom: 7.5rem;
+}
+
+.container3 {
+   
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Badge */
+.badge2 {
+    display: inline-block;
+    font-size: 0.75rem;
+    text-transform: uppercase;
+    color: #fff;
+    background:linear-gradient(45deg, #2b2b2b, #ff4081, #ff5722);
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    margin-bottom: 1rem;
+}
+
+/* Title and Description */
+.title-w {
+    font-size: 3rem;
+    color: #f4f6f8;
+    max-width: 600px;
+    line-height: 1.2;
+}
+
+.description-w {
+    font-size: 1.25rem;
+    color: #666;
+    max-width: 600px;
+    margin-top: 1rem;
+    font-weight: 500;
+}
+
+/* SDK Icons List */
+.sdk-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    list-style-type: none;
+}
+
+.sdk-icon {
+    display: inline-block;
+    padding: 10px;
+    background-color: #0c0c0c;
+    border-radius: 8px;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s;
+}
+
+.sdk-icon img {
+    
+    width: 32px;
+    height: 32px;
+}
+
+.sdk-icon:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
+}
+
+/* Button */
+.button-secondary {
+    display: inline-block;
+    padding: 10px 20px;
+    background:linear-gradient(45deg, #2b2b2b, #82022d ,  #2b2b2b);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.button-secondary:hover {
+    background-color: #5a6268;
+}
+ 
 
  
