@@ -128,7 +128,7 @@ body {
 .appwrite-section {
     display: flex;
     justify-content: space-between;
-    padding: 20px;
+    padding: 70px;
     max-width: 1200px;
     width: 100%;
     margin-top: 100px; /* Added margin-top */
@@ -138,7 +138,7 @@ body {
     text-align: left;
     flex: 1;
     width: 50%;
-    margin-right: 350px;
+    margin-right: 200px;
   }
   
   .right-section {
@@ -302,6 +302,7 @@ body {
   }
   
   img.image-block {
+    padding: 30px;
     width: 100%;
     aspect-ratio: 1244 / 717;
     display: block;
@@ -330,7 +331,7 @@ body {
   
   /* Hero Line 2 - Positioned on the right */
   .hero-line-2 {
-    top: 42rem;   /* Adjust top positioning */
+    top: 60rem;   /* Adjust top positioning */
     right: 0;     /* Align to the right side of the container */
     transform: translateX(50%);  /* Shift into the visible viewport */
     width: calc(50% - 5rem); 
@@ -972,6 +973,87 @@ a:hover {
 .button-secondary:hover {
     background-color: #5a6268;
 }
- 
+.scale-section {
+    position: relative;
+    margin: 7.5rem 0;
+    padding: 2rem;
+    overflow: hidden;
+}
+
+.bg-image {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    display: grid;
+    place-items: center;
+    
+}
+
+.bg-image img {
+    width: 512px;
+    object-fit: cover;
+     opacity: 0.5;/* Add subtle transparency to the background image */
+     border-radius: 50%;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    position: relative;
+}
+
+.hero {
+    align-self: start;
+}
+
+.headline {
+    font-size: 4rem;
+    font-weight: 700;
+    color: #FFFFFF;
+    max-width: 600px;
+}
+
+.stats-list {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: auto;
+    margin-top: 3rem;
+}
+
+.stats-item {
+    text-align: right;
+    margin-bottom: 2rem;
+}
+
+.stat-number {
+    font-size: 3rem;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.stat-description {
+    font-size: 1rem;
+    color: #B3B3B3;
+}
+
+/* Custom responsive design for mobile */
+@media (max-width: 768px) {
+    .content-container {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .stats-list {
+        align-items: center;
+    }
+
+    .bg-image {
+        display: none; /* Hide background on mobile */
+    }
+} 
 
  
