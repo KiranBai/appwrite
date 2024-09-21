@@ -210,10 +210,11 @@ body {
 }
   
   .main-heading {
-    font-size: 3em;
+    font-size: 2em;
     font-weight: bold;
     line-height: 1.2;
     margin-bottom: 20px;
+    color: white;
   }
   
   .highlight {
@@ -302,10 +303,11 @@ body {
   }
   
   img.image-block {
-    padding: 30px;
+    padding: 100px;
     width: 100%;
     aspect-ratio: 1244 / 717;
     display: block;
+    
   }
 
 /* General styles for both hero lines */
@@ -315,26 +317,29 @@ body {
   }
   
   .hero-line img {
-    max-width: 90%;
+    max-width: 80%;
     height: auto;
   }
   
   /* Hero Line 1 - Positioned on the left */
   .hero-line-1 {
-    max-width: 50%;
+    max-width:100%;
     top: 30rem;   /* Adjust top positioning */
     left: 0;      /* Align to the left side of the container */
     transform: translateX(-50%); /* Ensure it stays within the viewport */
     width: 75.9375rem;
+    z-index: -1;
      /* Set width for the first hero line */
   }
   
   /* Hero Line 2 - Positioned on the right */
   .hero-line-2 {
+    max-width:100%;
     top: 60rem;   /* Adjust top positioning */
     right: 0;     /* Align to the right side of the container */
     transform: translateX(50%);  /* Shift into the visible viewport */
     width: calc(50% - 5rem); 
+    z-index: -1;
     /* Set width for the second hero line */
   }
 
@@ -519,16 +524,25 @@ body {
 
 /* Product Card */
 .product-card {
+    display: flex;
+    justify-content: space-between; /* Ensure content and image are aligned */
     background-color: #2a2a2a;
     padding: 20px;
     border-radius: 10px;
+    align-items: center;
+    gap: 20px; /* Add space between the content and the image */
 }
 
+/* Content inside each product card */
+.product-content {
+    max-width: 60%; /* Control the width of the text content */
+}
+
+/* Product Title */
 .product-title {
     display: flex;
     align-items: center;
     font-size: 1.5rem;
-    color: linear-gradient(45deg, #2b2b2b, #ff4081, #ff5722);
     margin-bottom: 15px;
 }
 
@@ -579,7 +593,8 @@ body {
 
 /* Product Images */
 .product-img {
-    width: 100%;
+    max-width: 35%; /* Set width for the image */
+    height: auto;
     border-radius: 10px;
     object-fit: cover;
 }
@@ -590,6 +605,8 @@ body {
     border-top: 1px solid #3a3a3a;
     margin: 40px 0;
 }
+
+
 
 /* Responsive Adjustments */
 @media (max-width: 768px) {
@@ -870,23 +887,29 @@ a:hover {
     padding-top: 10rem;
     overflow: hidden;
 }
+.hero-content1{
+    text-align: left;
+}
 
 /* Background Image */
 .background-image {
     position: absolute;
     top: 0;
-    left: 30%;
-    transform: translateX(150px);
+    right: 0; /* Align image to the right */
     z-index: -1;
-    
+    display: flex;
+    justify-content: flex-end; /* Ensure content moves to the right */
 }
 
+/* Adjusted Background Image */
 .background-img {
     width: 650px;
     height: 700px;
     display: block;
     border-radius: 50%;
+    object-fit: cover; /* Ensures the image retains its aspect ratio */
 }
+
 
 /* Content Wrapper */
 .content-wrapper1 {
@@ -914,7 +937,7 @@ a:hover {
 
 /* Title and Description */
 .title-w {
-    font-size: 3rem;
+    font-size: 2rem;
     color: #f4f6f8;
     max-width: 600px;
     line-height: 1.2;
@@ -1683,3 +1706,4 @@ body {
         text-align: left;
     }
 }
+
