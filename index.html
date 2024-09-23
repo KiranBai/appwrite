@@ -14,6 +14,7 @@
         We are having lots of fun on <i class="fab fa-discord"></i><a href="https://discord.com/invite/GSeTUeA"> Discord. Come and join us!</a>
     </div>
     <header>
+
         <nav class="navbar">
             <div class="logo">
                 <img src="https://appwrite.io/images/logos/appwrite.svg" alt="Appwrite Logo">
@@ -26,12 +27,15 @@
                 <li><a href="#">Changelog<sup class="sup-period">.</sup></a></li>
                 <li><a href="#">Pricing</a></li>
             </ul>
+            <div class="signup" style="display: flex; flex-direction: row; gap:30px">
             <div class="github-stars">
                 <span class="web-icon-star" aria-hidden="true"></span> 
-                <a href="#">Star on GitHub 43.6K</a>
+                <a href="#">Star on GitHub <span style="color: white;">43.6K</span></a>
             </div>
             <button class="btn get-started">Get started</button>
+           </div>
         </nav>
+
     </header>
     <main>
         <section class="appwrite-section">
@@ -47,7 +51,10 @@
                
               </div>
               <h1 class="main-heading">
-                Build like a team of hundreds<span class="highlight">_</span>
+                Build like a team <span style="background: linear-gradient(to bottom, #FFFFFF 40%, #f3bdc6 60%);
+                -webkit-background-clip: text;
+                background-clip: text;
+                color: transparent; ">of hun</span>dreds<span class="highlight">_</span>
               </h1>
             </div>
             <div class="right-section">
@@ -59,7 +66,7 @@
           </section>
           <section class="custom-container no-padding" style="--section-width: 78.75rem;">
             <div class="image-wrapper">
-              <img class="image-block" src="https://appwrite.io/_app/immutable/assets/dashboard.CnrDaiK2.png" alt="console dashboard" >
+              <img class="image-block" src="/images/bgs/dashboard.png" alt="console dashboard" >
             </div>
           </section>
           <div class="hero-line hero-line-1 web-is-only-desktop">
@@ -102,7 +109,7 @@
          
          <div class="products-wrapper">
             <!-- Auth Product -->
-            <div class="product-card">
+            <div class="product-card" id="product-auth">
                 <div class="product-content">
                     <h3 class="product-title">
                         <img src="./images/products/dark/auth.png" alt="">
@@ -116,15 +123,38 @@
                         <li>Rate-limits and advanced user protection</li>
                         <li>Custom SMTP and email templates</li>
                     </ul>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/databases.png" alt="">
+                        <span class="product-label">Databases</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/functions.png" alt="">
+                        <span class="product-label">Functions</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/messaging.png" alt="">
+                        <span class="product-label">Messaging</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/storage.png" alt="">
+                        <span class="product-label">Storage</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/realtime.png" alt="">
+                        <span class="product-label">Realtime</span>
+                    </h3>
                 </div>
                 <img src="./images/products/auth-shot.avif" alt="" class="product-img">
             </div>
         
-            <hr class="product-divider">
         
             <!-- Databases Product -->
-            <div class="product-card">
+            <div class="product-card" id="product-database" style="display: none;">
                 <div class="product-content">
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/auth.png" alt="">
+                        <span class="product-label">Auth</span>
+                    </h3>
                     <h3 class="product-title">
                         <img src="./images/products/dark/databases.png" alt="">
                         <span class="product-label">Databases</span>
@@ -138,15 +168,39 @@
                         <li>Custom data validation</li>
                         <li>Relationships support</li>
                     </ul>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/functions.png" alt="">
+                        <span class="product-label">Functions</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/messaging.png" alt="">
+                        <span class="product-label">Messaging</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/storage.png" alt="">
+                        <span class="product-label">Storage</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/realtime.png" alt="">
+                        <span class="product-label">Realtime</span>
+                    </h3>
                 </div>
                 <img src="./images/products/db-shot.avif" alt="" class="product-img">
             </div>
         
-            <hr class="product-divider">
+    
         
             <!-- Functions Product -->
-            <div class="product-card">
+            <div class="product-card" id="product-functions" style="display: none;">
                 <div class="product-content">
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/auth.png" alt="">
+                        <span class="product-label">Auth</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/databases.png" alt="">
+                        <span class="product-label">Databases</span>
+                    </h3>
                     <h3 class="product-title">
                         <img src="./images/products/dark/functions.png" alt="">
                         <span class="product-label">Functions</span>
@@ -159,15 +213,40 @@
                         <li>Support for 30+ runtimes in 13 languages</li>
                         <li>Custom domain support</li>
                     </ul>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/messaging.png" alt="">
+                        <span class="product-label">Messaging</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/storage.png" alt="">
+                        <span class="product-label">Storage</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/realtime.png" alt="">
+                        <span class="product-label">Realtime</span>
+                    </h3>
+                    
                 </div>
                 <img src="./images/products/fn-shot..avif" alt="" class="product-img">
             </div>
         
-            <hr class="product-divider">
+        
         
             <!-- Messaging Product -->
-            <div class="product-card">
+            <div class="product-card" id="product-messaging" style="display: none;">
                 <div class="product-content">
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/auth.png" alt="">
+                        <span class="product-label">Auth</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/databases.png" alt="">
+                        <span class="product-label">Databases</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/functions.png" alt="">
+                        <span class="product-label">Functions</span>
+                    </h3>
                     <h3 class="product-title">
                         <img src="./images/products/dark/messaging.png" alt="">
                         <span class="product-label">Messaging</span>
@@ -180,15 +259,39 @@
                         <li>Send push notifications, emails, and SMS</li>
                         <li>Supports real-time and location-based messaging</li>
                     </ul>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/storage.png" alt="">
+                        <span class="product-label">Storage</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/realtime.png" alt="">
+                        <span class="product-label">Realtime</span>
+                    </h3>
                 </div>
                 <img src="./images/products/messaging-shot.avif" alt="" class="product-img1">
             </div>
         
-            <hr class="product-divider">
+    
         
             <!-- Storage Product -->
-            <div class="product-card">
+            <div class="product-card" id="product-storage" style="display: none;">
                 <div class="product-content">
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/auth.png" alt="">
+                        <span class="product-label">Auth</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/databases.png" alt="">
+                        <span class="product-label">Databases</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/functions.png" alt="">
+                        <span class="product-label">Functions</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/messaging.png" alt="">
+                        <span class="product-label">Messaging</span>
+                    </h3>
                     <h3 class="product-title">
                         <img src="./images/products/dark/storage.png" alt="">
                         <span class="product-label">Storage</span>
@@ -200,15 +303,39 @@
                         <li>Built-in image transformation capabilities</li>
                         <li>Advanced compression with WebP/Brotli support</li>
                     </ul>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/realtime.png" alt="">
+                        <span class="product-label">Realtime</span>
+                    </h3>
                 </div>
                 <img src="./images/products/storage-shot.avif" alt="" class="product-img">
             </div>
         
-            <hr class="product-divider">
+        
         
             <!-- Realtime Product -->
-            <div class="product-card">
+            <div class="product-card" id="product-realtime" style="display: none;">
                 <div class="product-content">
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/auth.png" alt="">
+                        <span class="product-label">Auth</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/databases.png" alt="">
+                        <span class="product-label">Databases</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/functions.png" alt="">
+                        <span class="product-label">Functions</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/messaging.png" alt="">
+                        <span class="product-label">Messaging</span>
+                    </h3>
+                    <h3 class="product-title">
+                        <img src="./images/products/dark/storage.png" alt="">
+                        <span class="product-label">Storage</span>
+                    </h3>
                     <h3 class="product-title">
                         <img src="./images/products/dark/realtime.png" alt="">
                         <span class="product-label">Realtime</span>
@@ -224,17 +351,18 @@
                 <img src="./images/products/realtime-shot.avif" alt="" class="product-img">
             </div>
         
-            <hr class="product-divider">
         
-            <div class="post-wrapper " style="text-align: center;">
+            <div class="post-wrapper " style="text-align: center; ">
                 <img src="/images/products/post.png" alt="" > 
                 <h2 >See your products grow</h2>
-                <p >Keep track of your projects progress on the Appwrite Console and see them grow into
+                <p style="display: flex; flex-wrap: wrap; justify-content: center;">Keep track of your projects progress on the Appwrite Console and see them grow into
                    products users love and use every day.
-                </p>
+                </p><br><br>
              </div>
             </div>
          </div>
+        
+        
 
          <div class="privacy-security-section">
             <div class="container">
@@ -534,9 +662,9 @@
         
     </main>
 
-    <footer class="appwrite-footer"></footer>
+    <footer class="appwrite-footer" >
         <div class="footer-logo">
-          <img src="https://appwrite.io/images/logos/appwrite.svg" alt="Appwrite Logo" height="24" width="130">
+          <img src="https://appwrite.io/images/logos/appwrite.svg" alt="Appwrite Logo" height="24" width="130" style="text-align: center;">
         </div>
         
         <div class="footer-content">
@@ -608,7 +736,7 @@
             </ul>
           </div>
         </div>
-      
+    </footer>
         <div class="footer-bottom">
           <ul class="social-links">
             <li><a href="https://appwrite.io/discord" target="_blank" rel="noopener noreferrer" aria-label="Discord"><i class="icon-discord"></i></a></li>
@@ -664,21 +792,53 @@
             </ul>
         
         </div>
-      </footer>
-      <script>
-            // JavaScript to toggle the menu visibility
-            const menuIcon = document.querySelector('.menu-icon');
-            const menu = document.querySelector('.menu');
+        <script>
+        
+              // Function to hide all product cards except the clicked one
+function showProduct(productId) {
+    // Hide all product cards
+    const productCards = document.querySelectorAll('.product-card');
+    productCards.forEach(card => {
+        card.style.display = 'none';
+    });
 
-            menuIcon.addEventListener('click', () => {
-                if (menu.style.display === 'block') {
-                    menu.style.display = 'none';
-                } else {
-                    menu.style.display = 'block';
-                }
-            });
+    // Show the selected product card
+    const selectedCard = document.getElementById(productId);
+    if (selectedCard) {
+        selectedCard.style.display = 'flex'; // Change to flex instead of inline-block
+    }
+}
 
-      </script>
+// Function to handle product label clicks and show the corresponding product
+function handleProductClick(event) {
+    if (event.target.closest('.product-label')) {
+        const label = event.target.closest('.product-label').textContent.toLowerCase();
+        
+        // Map the label to the corresponding product card ID
+        const productMap = {
+            'auth': 'product-auth',
+            'databases': 'product-database',
+            'functions': 'product-functions',
+            'messaging': 'product-messaging',
+            'storage': 'product-storage',
+            'realtime': 'product-realtime'
+        };
+
+        // Show the corresponding product card
+        if (productMap[label]) {
+            showProduct(productMap[label]);
+        }
+    }
+}
+
+// Add click event listeners for all product cards
+const productCards = document.querySelectorAll('.product-card');
+productCards.forEach(card => {
+    card.addEventListener('click', handleProductClick);
+});
+            </script>
+      
+        
 </body>
 </html>
 
