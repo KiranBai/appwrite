@@ -1,0 +1,646 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <link rel="preload" href="/fonts/aeonik-pro/AeonikPro-Regular.woff2" as="font" type="font/woff2" crossorigin/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link href="./css/web.css" rel="stylesheet">
+        <title>Docs Appwrite</title> 
+    </head>
+    <body class="dark">
+        <div style="display: contents">
+            <div class="relative">
+                <section class="web-mobile-header is-transparent">
+                    <div class="web-mobile-header-start">
+                        <a href="/" aria-label="homepage">
+                            <img class="web-logo web-u-only-dark" src="/images/logos/appwrite.svg" alt="appwrite" height="24" width="130">
+                            <img class="web-logo web-u-only-light" src="/images/logos/appwrite-light.svg" alt="appwrite" height="24" width="130">
+                        </a>
+                    </div>
+                    </a>
+                    <div class="web-mobile-header-end">
+                        <a href="https://cloud.appwrite.io" 
+                        class="web-button web-is-only-desktop">
+                        <span class="text-sub-body font-medium">Go to Console</span>
+                        </a> 
+                        <button class="web-button is-text" aria-label="open navigation">
+                            <span aria-hidden="true" class="web-icon-hamburger-menu"></span>
+                        </button>
+                    </div>
+                </section>
+                <header class="web-main-header is-docs is-transparent">
+                    <div class="web-main-header-wrapper">
+                        <div class="web-main-header-start flex-1">
+                            <a href="/" aria-label="homepage" >
+                                <img class="web-logo web-u-only-dark" src="/images/logos/appwrite.svg" alt="appwrite" height="24" width="130">
+                                <img class="web-logo web-u-only-light" src="/images/logos/appwrite-light.svg" alt="appwrite" height="24" width="130">
+                            </a>
+                            <nav class="web-main-header-nav" aria-label="Top">
+                                <ul class="web-main-header-nav-list">
+                                    <li class="web-main-header-nav-item">
+                                        <a class="web-link" href="/docs">Docs</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <div class="web-u-margin-inline-start-48 flex flex-1">
+                                <button class="web-input-button web-u-flex-basis-400">
+                                    <span class="web-icon-search" aria-hidden="true"></span>
+                                    <span class="text" >Search in docs</span>
+                                    <div class="ml-auto flex gap-1">
+                                        <span class="web-kbd" aria-label="control">Ctrl</span>
+                                        <span class="web-kbd">K</span>
+                                    </div>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="web-main-header-end">
+                            <div class="flex gap-2">
+                                <a href="https://github.com/appwrite/appwrite" target="_blank" rel="noopener noreferrer" class="web-button is-text">
+                                    <span class="web-icon-star" aria-hidden="true"></span>
+                                    <span class="text">Star on GitHub</span>
+                                    <span class="web-inline-tag text-sub-body">43.9K</span>
+                                </a>
+                                <a class="web-button web-u-inline-width-100-percent-mobile" href="https://cloud.appwrite.io"> <span >Get started</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+                <div class="web-grid-side-nav mx-auto" style="--container-size: var(--container-size-large);">
+                    <nav class="web-side-nav" aria-label="Side">
+                        <div class="web-side-nav-wrapper">
+                            <button class="web-input-text web-is-not-desktop">
+                                <span class="web-icon-search"></span>
+                                <span class="text">Search in docs</span>
+                            </button>
+                            <div class="web-side-nav-scroll">
+                                <section>
+                                    <ul>
+                                        <li>
+                                            <a class="web-side-nav-button is-selected" href="/docs">
+                                                <span class="icon icon-home" aria-hidden="true"></span>
+                                                <span class="text-caption">Home</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="web-side-nav-button" href="/docs/quick-starts">
+                                                <span class="icon icon-play " aria-hidden="true"></span>
+                                                <span class="text-caption">Quick start</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon icon-book-open " aria-hidden="true"></span>
+                                                <span class="text-caption">Tutorials</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon icon-cog " aria-hidden="true"></span>
+                                                <span class="text-caption">SDKs</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon icon-document " aria-hidden="true"></span>
+                                                <span class="text-caption">API reference</span>
+                                                <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h2 class="web-side-nav-header text-micro uppercase whitespace-nowrap">Products </h2>
+                                    <ul>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon icon-user-group " aria-hidden="true"></span>
+                                                <span class="text-caption">Auth</span>
+                                                <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon icon-database " aria-hidden="true"></span>
+                                                <span class="text-caption">Databases</span>
+                                                <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon icon-lightning-bolt " aria-hidden="true"></span>
+                                                <span class="text-caption">Functions</span>
+                                                <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon icon-send " aria-hidden="true"></span>
+                                                <span class="text-caption">Messaging</span>
+                                                <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon icon-folder " aria-hidden="true"></span>
+                                                <span class="text-caption">Storage</span>
+                                                <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon icon-chip " aria-hidden="true"></span>
+                                                <span class="text-caption">AI</span>
+                                                <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h2 class="web-side-nav-header text-micro uppercase whitespace-nowrap">APIS </h2>
+                                    <ul>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon icon-clock " aria-hidden="true"></span>
+                                                <span class="text-caption">Realtime</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon web-icon-rest " aria-hidden="true"></span>
+                                                <span class="text-caption">REST</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon icon-graphql " aria-hidden="true"></span>
+                                                <span class="text-caption">GraphQL</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h2 class="web-side-nav-header text-micro uppercase whitespace-nowrap">Tooling </h2>
+                                    <ul>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon icon-terminal " aria-hidden="true"></span>
+                                                <span class="text-caption">CLI</span>
+                                                <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon web-icon-command " aria-hidden="true"></span>
+                                                <span class="text-caption">Command Center</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon icon-sparkles " aria-hidden="true"></span>
+                                                <span class="text-caption">Assistant</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon icon-text " aria-hidden="true"></span>
+                                                <span class="text-caption">The Appwriter</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </section>
+                                <section>
+                                    <h2 class="web-side-nav-header text-micro uppercase whitespace-nowrap">Advanced </h2>
+                                    <ul>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon web-icon-platform " aria-hidden="true"></span>
+                                                <span class="text-caption">Platform</span>
+                                                <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon icon-puzzle " aria-hidden="true"></span>
+                                                <span class="text-caption">Integrations</span>
+                                                <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon icon-refresh " aria-hidden="true"></span>
+                                                <span class="text-caption">Migrations</span>
+                                                <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon icon-shield-check " aria-hidden="true"></span>
+                                                <span class="text-caption">Security</span>
+                                                <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="web-side-nav-button" href="">
+                                                <span class="icon icon-server " aria-hidden="true"></span>
+                                                <span class="text-caption">Self-hosting</span>
+                                                <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </section>
+                            </div>
+                            <div class="web-side-nav-mobile-footer-buttons">
+                                <a class="web-button web-u-inline-width-100-percent-mobile" href="https://cloud.appwrite.io">
+                                    <span >Get started</span>
+                                </a>
+                                <a href="https://github.com/appwrite/appwrite" target="_blank" rel="noopener noreferrer" class="web-button is-text web-u-inline-width-100-percent-mobile">
+                                    <span class="web-icon-star" aria-hidden="true"></span>
+                                    <span class="text">Star on GitHub</span>
+                                    <span class="web-inline-tag text-sub-body">43.9K</span>
+                                </a>
+                            </div>
+                        </div>
+                    </nav>
+                    <main class="web-main-section relative overflow-x-hidden " id="main">
+                        <div class="absolute translate-x-96">
+                            <img src="https://appwrite.io/images/bgs/docs-blur-1.svg" alt="">
+                        </div>
+                        <div class="web-u-opacity-40-mobile absolute  right-0" style="top: 500px;" >
+                            <img src="/images/dark/tech-dark.png" alt="" width="450px" height="708">
+                        </div>
+                        
+                        <section class="web-hero is-align-start e-hero-docs relative ">
+                            <h1 class="text-display font-aeonik-pro text-primary max-w-[600px]">
+                                Learn how to build like a team of hundreds<span class="web-u-color-text-accent">_</span>
+                            </h1>
+                            <p class="text-description max-w-[600px]">Appwrite helps you build secure and scalable apps, faster. Leverage Appwrite&#39;s
+                powerful APIs to stop fighting technologies and start delivering value.</p>
+                <hr style="border: 1px solid rgb(50, 50, 50);">         
+            </section>
+                        
+                        <section class="web-hero is-align-start tech-hero">
+                            <h2 class="text-title font-aeonik-pro text-primary max-w-[600px]" >Get started with your technologies</h2>
+                            <p class="text-description max-w-[600px]" >Start building with your preferred web, mobile, and native frameworks by following a
+                quick start guide.</p>
+                            <ul class="web-u-margin-block-32-mobile web-u-margin-block-40-not-mobile  flex flex-wrap gap-4 lg:max-w-[34rem]">
+                                <span>
+                                    <li>
+                                        <a href="" class="web-icon-button web-box-icon has-border-gradient">
+                                            <img src="/images/dark/flutter.svg" alt="Flutter quick start" width="32" height="32">
+                                        </a>
+                                    </li>
+                                </span>
+                                <span >
+                                    <li>
+                                        <a href="" class="web-icon-button web-box-icon has-border-gradient">
+                                            <img src="/images//dark/nextjs.svg" alt="Next quick start" width="32" height="32">
+                                        </a>
+                                    </li>
+                                </span>
+                                <span >
+                                    <li>
+                                        <a href="" class="web-icon-button web-box-icon has-border-gradient">
+                                            <img src="/images//dark/react.svg" alt="React quick start" width="32" height="32">
+                                        </a>
+                                    </li>
+                                </span>
+                                <span >
+                                    <li>
+                                        <a href="" class="web-icon-button web-box-icon has-border-gradient">
+                                            <img src="/images//dark/svelte.svg" alt="Svelte quick start" width="32" height="32">
+                                        </a>
+                                    </li>
+                                </span>
+                                <span >
+                                    <li>
+                                        <a href="" class="web-icon-button web-box-icon has-border-gradient">
+                                            <img src="/images/dark/nuxt.svg" alt="Nuxt quick start" width="32" height="32">
+                                        </a>
+                                    </li>
+                                </span>
+                                <span >
+                                    <li>
+                                        <a href="" class="web-icon-button web-box-icon has-border-gradient">
+                                            <img src="/images/dark/vue.svg" alt="Vue quick start" width="32" height="32">
+                                        </a>
+                                    </li>
+                                </span>
+                                <span >
+                                    <li>
+                                        <a href="" class="web-icon-button web-box-icon has-border-gradient">
+                                            <img src="/images/dark/angular.svg" alt="Angular quick start" width="32" height="32">
+                                        </a>
+                                    </li>
+                                </span>
+                                <span >
+                                    <li>
+                                        <a href="" class="web-icon-button web-box-icon has-border-gradient">
+                                            <img src="/images/dark/refine.svg" alt="Refine quick start" width="32" height="32">
+                                        </a>
+                                    </li>
+                                </span>
+                                <span >
+                                    <li>
+                                        <a href="" class="web-icon-button web-box-icon has-border-gradient">
+                                            <img src="/images/dark/apple.svg" alt="Apple quick start" width="32" height="32">
+                                        </a>
+                                    </li>
+                                </span>
+                                <span >
+                                    <li>
+                                        <a href="" class="web-icon-button web-box-icon has-border-gradient">
+                                            <img src="/images/dark/android.svg" alt="Android quick start" width="32" height="32">
+                                        </a>
+                                    </li>
+                                </span>
+                                <span >
+                                    <li>
+                                        <a href="" class="web-icon-button web-box-icon has-border-gradient">
+                                            <img src="/images/dark/react-native.svg" alt="React Native quick start" width="32" height="32">
+                                        </a>
+                                    </li>
+                                </span>
+                            </ul>
+                            <a href="" class="web-button is-secondary" style="align-self: start;" >
+                                <span class="text-sub-body font-medium">Explore all technologies</span>
+                            </a>
+                            <div class="web-is-not-mobile spline-wrapper absolute " >
+                                <img class="web-u-only-dark" src="/images/animations/tech-dark-transparent.png" width="660" height="660" alt="" style="position: absolute;">
+                                <img class="web-u-only-light" src="/images/animations/tech-light-transparent.png" width="660" height="660" alt="" style="position: absolute;">
+                            </div>
+                            <div class="bg-overlay "></div>
+                        </section>
+                        <section>
+                            <h2 class="text-title font-aeonik-pro text-primary max-w-[600px]">Show me some code</h2>
+                            <p class="text-description mt-4 max-w-[600px]" >If you learn best from code examples, follow one of our tutorials.</p>
+                            <div>
+                                <div class="mt-2 flex flex-wrap items-center">
+                                    <div class="nav ml-auto flex items-end gap-3 ">
+                                        <button class="web-icon-button " aria-label="Move carousel backward" disabled>
+                                            <span class="web-icon-arrow-left" aria-hidden="true"></span>
+                                        </button>
+                                        <button class="web-icon-button " aria-label="Move carousel forward">
+                                            <span class="web-icon-arrow-right" aria-hidden="true"></span>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="carousel-wrapper " data-state="start">
+                                    <ul class="web-grid-articles carousel mt-8 svelte-1uzoyfi is-medium" style="gap: 32px;">
+                                        <li style="scroll-snap-align: start;">
+                                            <a class="web-grid-articles-item is-full-color" href="">
+                                                <div class="web-grid-articles-item-image">
+                                                    <img src="https://appwrite.io/images/tutorials/react.png" alt="" loading="lazy">
+                                                </div>
+                                                <article class="web-grid-articles-item-content">
+                                                    <header class="web-articles-item-header">
+                                                        <h3 class="text-sub-body font-medium text-primary">React tutorial</h3>
+                                                    </header>
+                                                    <p class="web-articles-item-paragraph text-sub-body font-medium mt-1 line-clamp-2" style="word-break: keep-all;">Learn Appwrite Auth, Databases, and more with React.</p>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li style="scroll-snap-align: start;">
+                                            <a class="web-grid-articles-item is-full-color" href="">
+                                                <div class="web-grid-articles-item-image">
+                                                    <img src="https://appwrite.io/images/tutorials/svelte.png" alt="" loading="lazy">
+                                                </div>
+                                                <article class="web-grid-articles-item-content">
+                                                    <header class="web-articles-item-header">
+                                                        <h3 class="text-sub-body font-medium text-primary">SvelteKit tutorial</h3>
+                                                    </header>
+                                                    <p class="web-articles-item-paragraph text-sub-body font-medium mt-1 line-clamp-2" style="word-break: keep-all;">Learn Appwrite Auth, Databases, and more with SvelteKit.</p>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li style="scroll-snap-align: start;">
+                                            <a class="web-grid-articles-item is-full-color" href="">
+                                                <div class="web-grid-articles-item-image">
+                                                    <img src="https://appwrite.io/images/tutorials/vue.png" alt="" loading="lazy">
+                                                </div>
+                                                <article class="web-grid-articles-item-content">
+                                                    <header class="web-articles-item-header">
+                                                        <h3 class="text-sub-body font-medium text-primary">Vue tutorial</h3>
+                                                    </header>
+                                                    <p class="web-articles-item-paragraph text-sub-body font-medium mt-1 line-clamp-2" style="word-break: keep-all;">Learn Appwrite Auth, Databases, and more with Vue.</p>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li style="scroll-snap-align: start;">
+                                            <a class="web-grid-articles-item is-full-color" href="">
+                                                <div class="web-grid-articles-item-image">
+                                                    <img src="https://appwrite.io/images/tutorials/svelte.png" alt="" loading="lazy">
+                                                </div>
+                                                <article class="web-grid-articles-item-content">
+                                                    <header class="web-articles-item-header">
+                                                        <h3 class="text-sub-body font-medium text-primary">Android tutorial</h3>
+                                                    </header>
+                                                    <p class="web-articles-item-paragraph text-sub-body font-medium mt-1 line-clamp-2" style="word-break: keep-all;">Learn Appwrite Auth, Databases, and more with Android.</p>
+                                                </article>
+                                            </a>
+                                        </li>
+                                        <li style="scroll-snap-align: start;">
+                                            <a class="web-grid-articles-item is-full-color" href="">
+                                                <div class="web-grid-articles-item-image">
+                                                    <img src="https://appwrite.io/images/tutorials/flutter.png" alt="" loading="lazy">
+                                                </div>
+                                                <article class="web-grid-articles-item-content">
+                                                    <header class="web-articles-item-header">
+                                                        <h3 class="text-sub-body font-medium text-primary">Flutter tutorial</h3>
+                                                    </header>
+                                                    <p class="web-articles-item-paragraph text-sub-body font-medium mt-1 line-clamp-2" style="word-break: keep-all;">Learn Appwrite Auth, Databases, and more with Flutter.</p>
+                                                </article>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </section>
+                        <section class="web-hero is-align-start is-no-max-width" >
+                            <h2 class="text-title font-aeonik-pro text-primary max-w-[600px]">Explore capabilities</h2>
+                            <p class="text-description max-w-[600px]">All the core functionalities you need with a scalable and flexible API. Explore
+                Appwrite &#39;s product offerings.</p>
+                            <div class="mt-6">
+                                <ul class="web-grid-row-4 web-grid-row-4-m-1">
+                                    <li>
+                                        <a href="" class="web-card is-normal">
+                                            <img src="/images/products/dark/auth.png" alt="" class="web-u-only-dark" width="40" height="40">
+                                            <img src="/images/icons/illustrated/light/auth.png" alt="" class="web-u-only-light" width="40" height="40">
+                                            <h4 class="text-sub-body text-primary mt-2 font-medium">Auth</h4>
+                                            <p class="text-sub-body mt-1">Sign in users with multiple OAuth providers.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="web-card is-normal">
+                                            <img src="/images/products/dark/databases.png" alt="" class="web-u-only-dark" width="40" height="40">
+                                            <img src="/images/icons/illustrated/light/databases.png" alt="" class="web-u-only-light" width="40" height="40">
+                                            <h4 class="text-sub-body text-primary mt-2 font-medium">Databases</h4>
+                                            <p class="text-sub-body mt-1">Store your application and user data.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="web-card is-normal">
+                                            <img src="/images/products/dark/functions.png" alt="" class="web-u-only-dark" width="40" height="40">
+                                            <img src="/images/icons/illustrated/light/functions.png" alt="" class="web-u-only-light" width="40" height="40">
+                                            <h4 class="text-sub-body text-primary mt-2 font-medium">Functions</h4>
+                                            <p class="text-sub-body mt-1">Extend and customize your server &#39;s functionality.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="web-card is-normal">
+                                            <img src="/images/products/dark/messaging.png" alt="" class="web-u-only-dark" width="40" height="40">
+                                            <img src="/images/icons/illustrated/light/messaging.png" alt="" class="web-u-only-light" width="40" height="40">
+                                            <h4 class="text-sub-body text-primary mt-2 font-medium">Messaging</h4>
+                                            <p class="text-sub-body mt-1">Send and schedule email, SMS, and push notifications.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="web-card is-normal">
+                                            <img src="/images/products/dark/storage.png" alt="" class="web-u-only-dark" width="40" height="40">
+                                            <img src="/images/icons/illustrated/light/storage.png" alt="" class="web-u-only-light" width="40" height="40">
+                                            <h4 class="text-sub-body text-primary mt-2 font-medium">Storage</h4>
+                                            <p class="text-sub-body mt-1">Store images, videos, documents, and files.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="web-card is-normal">
+                                            <img src="/images/products/dark/realtime.png" alt="" class="web-u-only-dark" width="40" height="40">
+                                            <img src="/images/icons/illustrated/light/realtime.png" alt="" class="web-u-only-light" width="40" height="40">
+                                            <h4 class="text-sub-body text-primary mt-2 font-medium">Realtime</h4>
+                                            <p class="text-sub-body mt-1">Respond to server events in realtime.</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="web-hero is-align-start is-no-max-width" >
+                            <h2 class="text-title font-aeonik-pro text-primary max-w-[600px]">Explore ways to integrate</h2>
+                            <p class="text-description max-w-[600px]">Choose how you integrate with Appwrite. Explore references for the Appwrite SDK,
+                REST API, GraphQL API, or Realtime API.</p>
+                            <div class="mt-6">
+                                <ul class="web-grid-row-2">
+                                    <li>
+                                        <a href="" class="web-card is-normal">
+                                            <h4 class="text-sub-body text-primary mt-2 font-medium">SDKs</h4>
+                                            <p class="text-sub-body mt-1">Light-weight SDKs for your favorite platforms.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="web-card is-normal">
+                                            <h4 class="text-sub-body text-primary mt-2 font-medium">REST API</h4>
+                                            <p class="text-sub-body mt-1">Integrate with HTTP requests without the needing an SDK.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="web-card is-normal">
+                                            <h4 class="text-sub-body text-primary mt-2 font-medium">GraphQL</h4>
+                                            <p class="text-sub-body mt-1">Leverage GraphQL through our SDKs or integrate directly with REST
+                                endpoints.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="web-card is-normal">
+                                            <h4 class="text-sub-body text-primary mt-2 font-medium">Realtime</h4>
+                                            <p class="text-sub-body mt-1">Respond to auth, databases, storage, and function events in
+                                realtime.</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="web-hero is-align-start is-no-max-width">
+                            <h2 class="text-title font-aeonik-pro text-primary max-w-[600px]">Migrate to Appwrite</h2>
+                            <p class="text-description max-w-[600px]">Own your data with automatic data migrations.</p>
+                            <div class="mt-6">
+                                <ul class="web-grid-row-4">
+                                    <li>
+                                        <a href="" class="web-card is-normal">
+                                            <h4 class="text-sub-body text-primary mt-2 font-medium">Self-hosted</h4>
+                                            <p class="text-sub-body mt-1">Move data from self-hosted to Appwrite Cloud.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="web-card is-normal">
+                                            <h4 class="text-sub-body text-primary mt-2 font-medium">Firebase</h4>
+                                            <p class="text-sub-body mt-1">Migrate users and data from Firebase to Appwrite.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="web-card is-normal">
+                                            <h4 class="text-sub-body text-primary mt-2 font-medium">Supabase</h4>
+                                            <p class="text-sub-body mt-1">Migrate users and data from Supabase to Appwrite.</p>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="" class="web-card is-normal">
+                                            <h4 class="text-sub-body text-primary mt-2 font-medium">Nhost</h4>
+                                            <p class="text-sub-body mt-1">Migrate users and data from NHost to Appwrite.</p>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </section>
+                        <footer class="web-main-footer is-with-bg-color relative mt-8 text-sm">
+                            <div class="web-main-footer-grid-1">
+                                <ul class="web-main-footer-grid-1-column-1 flex gap-2">
+                                    <li >
+                                        <a href="https://appwrite.io/discord" class="web-icon-button " aria-label="Discord" target="_blank" rel="noopener noreferrer">
+                                            <span class="web-icon-discord " aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a href="https://github.com/appwrite" class="web-icon-button " aria-label="Github" target="_blank" rel="noopener noreferrer">
+                                            <span class="web-icon-github " aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a href="https://twitter.com/intent/follow?screen_name=appwrite" class="web-icon-button " aria-label="Twitter" target="_blank" rel="noopener noreferrer">
+                                            <span class="web-icon-x " aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a href="https://www.linkedin.com/company/appwrite" class="web-icon-button " aria-label="LinkedIn" target="_blank" rel="noopener noreferrer">
+                                            <span class="web-icon-linkedin " aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a href="https://www.youtube.com/c/appwrite?sub_confirmation=1" class="web-icon-button " aria-label="YouTube" target="_blank" rel="noopener noreferrer">
+                                            <span class="web-icon-youtube " aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                    <li >
+                                        <a href="https://app.daily.dev/squads/appwrite" class="web-icon-button " aria-label="Daily.dev" target="_blank" rel="noopener noreferrer">
+                                            <span class="web-icon-daily-dev " aria-hidden="true"></span>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <div class="web-main-footer-grid-1-column-2">
+                                <button class="web-select is-colored " >
+                                <div class="physical-select">
+                                <span class="web-icon-dark " aria-hidden="true"></span> <span>Dark</span>
+                                </div> <span class="icon-cheveron-down" aria-hidden="true"></span></button>  
+                                <div class="web-select is-colored web-is-only-mobile web-u-inline-width-100-percent-mobile-break1 " style="display: none;">
+                                <span class="web-icon-dark " aria-hidden="true"></span> <select>
+                                <option value="dark">Dark </option>
+                                <option value="light">Light </option>
+                                <option value="system">System </option>
+                                </select> 
+                                <span class="icon-cheveron-down" aria-hidden="true"></span>
+                            </div>
+                            </div>
+                                
+                                <ul class="web-main-footer-grid-1-column-3 web-main-footer-links items-start" >
+                                    <li>
+                                        <a href="/discord" target="_blank" rel="noopener noreferrer">Support</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://appwrite.online" target="_blank" rel="noopener noreferrer">Status</a>
+                                    </li>
+                                </ul>
+                                <div class="web-main-footer-grid-1-column-4 web-main-footer-copyright">Copyright © 2024 Appwrite</div>
+                            </div>
+                        </footer>
+                    </main>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
