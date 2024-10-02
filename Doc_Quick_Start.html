@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/svg+xml" href="https://appwrite.io/images/logos/logo.svg">
+      <!-- preload font for headlines -->
+      <link rel="preload" href="/fonts/aeonik-pro/AeonikPro-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+      <link href="./css/web.css" rel="stylesheet">
+      <link href="./css/search.css" rel="stylesheet">
+      <link href="./immutable/assets/0.Dc16agDy.css" rel="stylesheet">
+      <link href="./immutable/assets/Search.BHw0roZd.css" rel="stylesheet">
+      <title>Doc_Quick_Starts </title>
+   </head>
+   <body class="dark" >
+      <div style="display: contents">
+         <div class="relative">
+            <section class="web-mobile-header is-transparent">
+               <div class="web-mobile-header-start"><a href="/" aria-label="homepage"><img class="web-logo web-u-only-dark" src="/images/logos/appwrite.svg" alt="appwrite" height="24" width="130"> <img class="web-logo web-u-only-light" src="/images/logos/appwrite-light.svg" alt="appwrite" height="24" width="130"></a></div>
+               <div class="web-mobile-header-end"><a href="https://cloud.appwrite.io" class="web-button web-is-only-desktop"><span class="text-sub-body font-medium">Go to Console</span></a> <button class="web-button is-text" aria-label="open navigation">
+                <span aria-hidden="true" class="web-icon-hamburger-menu"></span></button></div>
+            </section>
+            <header class="web-main-header is-docs is-transparent">
+               <div class="web-main-header-wrapper">
+                  <div class="web-main-header-start flex-1">
+                     <a href="/" aria-label="homepage"><img class="web-logo web-u-only-dark" src="/images/logos/appwrite.svg" alt="appwrite" height="24" width="130"> <img class="web-logo web-u-only-light" src="/images/logos/appwrite-light.svg" alt="appwrite" height="24" width="130"></a> 
+                     <nav class="web-main-header-nav" aria-label="Top">
+                        <ul class="web-main-header-nav-list">
+                           <li class="web-main-header-nav-item"><a class="web-link" href="./doc.html">Docs</a></li>
+                        </ul>
+                     </nav>
+                     <div class="web-u-margin-inline-start-48 flex flex-1">
+                        <button class="web-input-button web-u-flex-basis-400">
+                           <span class="web-icon-search" aria-hidden="true"></span> <span class="text">Search in docs</span> 
+                           <div class="ml-auto flex gap-1"><span class="web-kbd" aria-label="control">Ctrl</span> <span class="web-kbd">K</span></div>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="web-main-header-end">
+                     <div class="flex gap-2"><a href="https://github.com/appwrite/appwrite" target="_blank" rel="noopener noreferrer" class="web-button is-text"><span class="web-icon-star" aria-hidden="true"></span> <span class="text">Star on GitHub</span> <span class="web-inline-tag text-sub-body">43.9K</span></a> <a class="web-button web-u-inline-width-100-percent-mobile" href="https://cloud.appwrite.io"><span class="hidden group-[&amp;[data-logged-in]]/body:block">Go to Console</span> <span class="block group-[&amp;[data-logged-in]]/body:hidden">Get started</span></a></div>
+                  </div>
+               </div>
+            </header>
+            <div class="web-grid-side-nav max-w-[90rem] mx-auto" style="--container-size: var(--container-size-large);">
+               <nav class="web-side-nav" aria-label="Side">
+                  <div class="web-side-nav-wrapper">
+                     <button class="web-input-text web-is-not-desktop"><span class="web-icon-search"></span> <span class="text">Search in docs</span></button> 
+                     <div class="web-side-nav-scroll">
+                        <section>
+                           <ul>
+                              <li><a class="web-side-nav-button" href="./doc.html"><span class="icon icon-home" aria-hidden="true"></span> 
+                                 <span class="text-caption flex gap-2"><span>Home</span> </span> </a> 
+                              </li>
+                              <li><a class="web-side-nav-button is-selected" href="./Doc_Quick_Start.html"><span class="icon icon-play " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>Quick start</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""><span class="icon icon-book-open " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>Tutorials</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""><span class="icon icon-cog " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>SDKs</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""><span class="icon icon-document " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>API reference</span> </span> <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span></a> </li>
+                           </ul>
+                        </section>
+                        <section>
+                           <h2 class="web-side-nav-header text-micro uppercase whitespace-nowrap">Products</h2>
+                           <ul>
+                              <li><a class="web-side-nav-button" href="/docs/products/auth"><span class="icon icon-user-group " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>Auth</span> </span> <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span></a> </li>
+                              <li><a class="web-side-nav-button" href=""><span class="icon icon-database " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>Databases</span> </span> <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span></a> </li>
+                              <li><a class="web-side-nav-button" href=""><span class="icon icon-lightning-bolt " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>Functions</span> </span> <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span></a> </li>
+                              <li><a class="web-side-nav-button" href=""><span class="icon icon-send " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>Messaging</span> </span> <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span></a> </li>
+                              <li><a class="web-side-nav-button" href=""><span class="icon icon-folder " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>Storage</span> </span> <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span></a> </li>
+                              <li><a class="web-side-nav-button" href=""><span class="icon icon-chip " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>AI</span> </span> <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span></a> </li>
+                           </ul>
+                        </section>
+                        <section>
+                           <h2 class="web-side-nav-header text-micro uppercase whitespace-nowrap">APIS</h2>
+                           <ul>
+                              <li><a class="web-side-nav-button" href=""><span class="icon icon-clock " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>Realtime</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""><span class="icon web-icon-rest " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>REST</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""><span class="icon icon-graphql " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>GraphQL</span> </span> </a> </li>
+                           </ul>
+                        </section>
+                        <section>
+                           <h2 class="web-side-nav-header text-micro uppercase whitespace-nowrap">Tooling</h2>
+                           <ul>
+                              <li><a class="web-side-nav-button" href=""><span class="icon icon-terminal " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>CLI</span> </span> <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span></a> </li>
+                              <li><a class="web-side-nav-button" href=""><span class="icon web-icon-command " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>Command Center</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""><span class="icon icon-sparkles " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>Assistant</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""><span class="icon icon-text " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>The Appwriter</span> </span> </a> </li>
+                           </ul>
+                        </section>
+                        <section>
+                           <h2 class="web-side-nav-header text-micro uppercase whitespace-nowrap">Advanced</h2>
+                           <ul>
+                              <li><a class="web-side-nav-button" href=""><span class="icon web-icon-platform " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>Platform</span> </span> <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span></a> </li>
+                              <li><a class="web-side-nav-button" href=""><span class="icon icon-puzzle " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>Integrations</span> </span> <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span></a> </li>
+                              <li><a class="web-side-nav-button" href=""><span class="icon icon-refresh " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>Migrations</span> </span> <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span></a> </li>
+                              <li><a class="web-side-nav-button" href=""><span class="icon icon-shield-check " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>Security</span> </span> <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span></a> </li>
+                              <li><a class="web-side-nav-button" href=""><span class="icon icon-server " aria-hidden="true"></span> <span class="text-caption flex gap-2"><span>Self-hosting</span> </span> <span class="icon-cheveron-right ml-auto " aria-hidden="true"></span></a> </li>
+                           </ul>
+                        </section>
+                     </div>
+                     <div class="web-side-nav-mobile-footer-buttons"><a class="web-button web-u-inline-width-100-percent-mobile" href="https://cloud.appwrite.io"><span class="hidden">Go to Console</span> <span>Get started</span></a> <a href="https://github.com/appwrite/appwrite" target="_blank" rel="noopener noreferrer" class="web-button is-text web-u-inline-width-100-percent-mobile"><span class="web-icon-star" aria-hidden="true"></span> <span class="text">Star on GitHub</span> <span class="web-inline-tag text-sub-body">43.9K</span></a></div>
+                  </div>
+               </nav>
+               <main class="web-main-section" id="main">
+                  <article class="web-article">
+                     <header class="web-article-header">
+                        <div class="web-article-header-start flex flex-col web-u-cross-start">
+                           <div class="relative flex items-center">
+                              <h1 class="text-title font-aeonik-pro">Quick start</h1>
+                           </div>
+                        </div>
+                        <div class="web-article-header-end"></div>
+                     </header>
+                     <div class="web-article-content web-u-gap-80">
+                        <section class="flex flex-col gap-6">
+                           <h2 class="text-micro uppercase">Web app</h2>
+                           <ul class="web-grid-row-4 web-grid-row-4-mobile-2">
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-js web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">Web</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-nextjs web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">Next.js</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-react web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">React</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="web-icon-vue web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">Vue.js</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="web-icon-nuxt web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">Nuxt</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-svelte web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">SvelteKit</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="web-icon-refine web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">Refine</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-angular web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">Angular</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-solidjs web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">Solid</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                           </ul>
+                        </section>
+                        <section class="flex flex-col gap-6">
+                           <h2 class="text-micro uppercase">Mobile and native</h2>
+                           <ul class="web-grid-row-4 web-grid-row-4-mobile-2">
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-react-native web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">React Native</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-flutter web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">Flutter</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-apple web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">Apple</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-android web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">Android</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                           </ul>
+                        </section>
+                        <section class="flex flex-col gap-6">
+                           <h2 class="text-micro uppercase">Server</h2>
+                           <ul class="web-grid-row-4 web-grid-row-4-mobile-2">
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-node_js web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">Node.js</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-python web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">Python</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-dart web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">Dart</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-php web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">PHP</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-ruby web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">Ruby</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-dotnet web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">.NET</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-deno web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">Deno</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-go web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">Go</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-swift web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">Swift</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                              <li class="is-mobile-col-span-2">
+                                 <a href="" class="web-card is-normal">
+                                    <header class="flex items-baseline gap-1">
+                                       <span class="icon-kotlin web-u-font-size-24 " aria-hidden="true"></span> 
+                                       <h4 class="text-sub-body font-medium text-primary">Kotlin</h4>
+                                    </header>
+                                 </a>
+                              </li>
+                           </ul>
+                        </section>
+                     </div>
+                  </article>
+                  <footer class="web-main-footer is-with-bg-color relative mt-8 text-sm">
+                     <div class="web-main-footer-grid-1">
+                        <ul class="web-main-footer-grid-1-column-1 flex gap-2">
+                           <li><a href="https://appwrite.io/discord" class="web-icon-button " aria-label="Discord" target="_blank" rel="noopener noreferrer"><span class="web-icon-discord " aria-hidden="true"></span></a> </li>
+                           <li><a href="https://github.com/appwrite" class="web-icon-button " aria-label="Github" target="_blank" rel="noopener noreferrer"><span class="web-icon-github " aria-hidden="true"></span></a> </li>
+                           <li><a href="https://twitter.com/intent/follow?screen_name=appwrite" class="web-icon-button " aria-label="Twitter" target="_blank" rel="noopener noreferrer"><span class="web-icon-x " aria-hidden="true"></span></a> </li>
+                           <li><a href="https://www.linkedin.com/company/appwrite" class="web-icon-button " aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><span class="web-icon-linkedin " aria-hidden="true"></span></a> </li>
+                           <li><a href="https://www.youtube.com/c/appwrite?sub_confirmation=1" class="web-icon-button " aria-label="YouTube" target="_blank" rel="noopener noreferrer"><span class="web-icon-youtube " aria-hidden="true"></span></a> </li>
+                           <li><a href="https://app.daily.dev/squads/appwrite" class="web-icon-button " aria-label="Daily.dev" target="_blank" rel="noopener noreferrer"><span class="web-icon-daily-dev " aria-hidden="true"></span></a> </li>
+                        </ul>
+                        <div class="web-main-footer-grid-1-column-2">
+                           <button class="web-select is-colored " aria-label="Select theme">
+                              <div class="physical-select"><span class="web-icon-dark " aria-hidden="true"></span> <span>Dark</span></div>
+                              <span class="icon-cheveron-down" aria-hidden="true"></span>
+                           </button>
+                           <div class="web-select is-colored web-is-only-mobile web-u-inline-width-100-percent-mobile-break1 " style="display: none;">
+                              <span class="web-icon-dark " aria-hidden="true"></span> 
+                              <select>
+                                 <option value="dark">Dark </option>
+                                 <option value="light">Light </option>
+                                 <option value="system">System </option>
+                              </select>
+                              <span class="icon-cheveron-down" aria-hidden="true"></span>
+                           </div>
+                        </div>
+                        <ul class="web-main-footer-grid-1-column-3 web-main-footer-links items-start">
+                           <li><a href="/discord" target="_blank" rel="noopener noreferrer">Support</a></li>
+                           <li><a href="https://appwrite.online" target="_blank" rel="noopener noreferrer">Status</a></li>
+                        </ul>
+                        <div class="web-main-footer-grid-1-column-4 web-main-footer-copyright">Copyright © 2024 Appwrite</div>
+                     </div>
+                  </footer>
+               </main>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
