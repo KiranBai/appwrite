@@ -4,6 +4,9 @@
         <link rel="preload" href="/fonts/aeonik-pro/AeonikPro-Regular.woff2" as="font" type="font/woff2" crossorigin/>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
         <link href="./css/web.css" rel="stylesheet">
+        <link href="./css/search.css" rel="stylesheet">
+        <link href="./immutable/assets/0.Dc16agDy.css" rel="stylesheet">
+        <link href="./immutable/assets/Search.BHw0roZd.css" rel="stylesheet">
         <title>Docs Appwrite</title> 
     </head>
     <body class="dark">
@@ -370,22 +373,19 @@
                             <div class="bg-overlay "></div>
                         </section>
                         <section>
-                            <h2 class="text-title font-aeonik-pro text-primary max-w-[600px]">Show me some code</h2>
+                            <h2 class="text-title font-aeonik-pro text-primary max-w-[600px]" >Show me some code</h2>
                             <p class="text-description mt-4 max-w-[600px]" >If you learn best from code examples, follow one of our tutorials.</p>
                             <div>
-                                <div class="mt-2 flex flex-wrap items-center">
-                                    <div class="nav ml-auto flex items-end gap-3 ">
-                                        <button class="web-icon-button " aria-label="Move carousel backward" disabled>
-                                            <span class="web-icon-arrow-left" aria-hidden="true"></span>
-                                        </button>
-                                        <button class="web-icon-button " aria-label="Move carousel forward">
-                                            <span class="web-icon-arrow-right" aria-hidden="true"></span>
-                                        </button>
-                                    </div>
+                            <div class="mt-2 flex flex-wrap items-center">
+                               <div class="nav ml-auto flex items-end gap-3 "><button class="web-icon-button " aria-label="Move carousel backward" disabled=""><span class="web-icon-arrow-left" aria-hidden="true"></span></button> 
+                                <button class="web-icon-button svelte-1uzoyfi" aria-label="Move carousel forward">
+                                    <span class="web-icon-arrow-right" aria-hidden="true"></span>
+                                </button>
                                 </div>
-                                <div class="carousel-wrapper " data-state="start">
-                                    <ul class="web-grid-articles carousel mt-8 svelte-1uzoyfi is-medium" style="gap: 32px;">
-                                        <li style="scroll-snap-align: start;">
+                            </div>
+                            <div class="carousel-wrapper svelte-1uzoyfi" data-state="start">
+                            <ul class="web-grid-articles carousel mt-8 svelte-1uzoyfi is-medium" style="gap: 32px;">
+                            <li style="scroll-snap-align: start;">
                                             <a class="web-grid-articles-item is-full-color" href="">
                                                 <div class="web-grid-articles-item-image">
                                                     <img src="https://appwrite.io/images/tutorials/react.png" alt="" loading="lazy">
@@ -613,16 +613,19 @@
                                     </li>
                                 </ul>
                                 <div class="web-main-footer-grid-1-column-2">
-                                <button class="web-select is-colored " >
-                                <div class="physical-select">
-                                <span class="web-icon-dark " aria-hidden="true"></span> <span>Dark</span>
-                                </div> <span class="icon-cheveron-down" aria-hidden="true"></span></button>  
-                                <div class="web-select is-colored web-is-only-mobile web-u-inline-width-100-percent-mobile-break1 " style="display: none;">
-                                <span class="web-icon-dark " aria-hidden="true"></span> <select>
-                                <option value="dark">Dark </option>
-                                <option value="light">Light </option>
-                                <option value="system">System </option>
-                                </select> 
+                                    <button class="web-select is-colored " >
+                                       <div class="physical-select">
+                                          <span class="web-icon-dark " aria-hidden="true"></span> <span>Dark</span>
+                                       </div>
+                                       <span class="icon-cheveron-down" aria-hidden="true"></span>
+                                    </button>
+                                    <div class="web-select is-colored web-is-only-mobile web-u-inline-width-100-percent-mobile-break1 " style="display: none;">
+                                    <span class="web-icon-dark " aria-hidden="true"></span> 
+                                    <select>
+                                       <option value="dark">Dark </option>
+                                       <option value="light">Light </option>
+                                       <option value="system">System </option>
+                                    </select>
                                 <span class="icon-cheveron-down" aria-hidden="true"></span>
                             </div>
                             </div>
