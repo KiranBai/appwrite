@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/svg+xml" href="https://appwrite.io/images/logos/logo.svg">
+      <link rel="preload" href="/fonts/aeonik-pro/AeonikPro-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+      <link rel="preload" href="/fonts/aeonik-pro/AeonikPro-Regular.woff2" as="font" type="font/woff2" crossorigin="">
+      <link href="./css/web.css" rel="stylesheet">
+      <link href="./css/search.css" rel="stylesheet">
+      <link href="./immutable/assets/0.Dc16agDy.css" rel="stylesheet">
+      <link href="./immutable/assets/Search.BHw0roZd.css" rel="stylesheet">
+      <title>Doc_Authentication </title>
+   </head>
+   <body class="dark">
+      <div style="display: contents">
+         <div class="relative">
+            <section class="web-mobile-header is-transparent">
+               <div class="web-mobile-header-start"><a href="/" aria-label="homepage"><img class="web-logo web-u-only-dark" src="/images/logos/appwrite.svg" alt="appwrite" height="24" width="130"> <img class="web-logo web-u-only-light" src="/images/logos/appwrite-light.svg" alt="appwrite" height="24" width="130"></a></div>
+               <div class="web-mobile-header-end"><a href="https://cloud.appwrite.io" class="web-button web-is-only-desktop"><span class="text-sub-body font-medium">Go to Console</span></a> <button class="web-button is-text" aria-label="open navigation"><span aria-hidden="true" class="web-icon-hamburger-menu"></span></button></div>
+            </section>
+            <header class="web-main-header is-docs is-transparent">
+               <div class="web-main-header-wrapper">
+                  <div class="web-main-header-start flex-1">
+                     <a href="/" aria-label="homepage"><img class="web-logo web-u-only-dark" src="/images/logos/appwrite.svg" alt="appwrite" height="24" width="130"> <img class="web-logo web-u-only-light" src="/images/logos/appwrite-light.svg" alt="appwrite" height="24" width="130"></a> 
+                     <nav class="web-main-header-nav" aria-label="Top">
+                        <ul class="web-main-header-nav-list">
+                           <li class="web-main-header-nav-item"><a class="web-link" href="./doc.html">Docs</a></li>
+                        </ul>
+                     </nav>
+                     <div class="web-u-margin-inline-start-48 flex flex-1">
+                        <button class="web-input-button web-u-flex-basis-400">
+                           <span class="web-icon-search" aria-hidden="true"></span> <span class="text">Search in docs</span> 
+                           <div class="ml-auto flex gap-1"><span class="web-kbd" aria-label="control">Ctrl</span> <span class="web-kbd">K</span></div>
+                        </button>
+                     </div>
+                  </div>
+                  <div class="web-main-header-end">
+                     <div class="flex gap-2"><a href="https://github.com/appwrite/appwrite" target="_blank" rel="noopener noreferrer" class="web-button is-text"><span class="web-icon-star" aria-hidden="true"></span> <span class="text">Star on GitHub</span> <span class="web-inline-tag text-sub-body">43.9K</span></a> <a class="web-button web-u-inline-width-100-percent-mobile" href="https://cloud.appwrite.io"><span class="hidden">Go to Console</span> <span >Get started</span></a></div>
+                  </div>
+               </div>
+            </header>
+            <div class="web-grid-two-side-navs">
+               <nav class="web-side-nav" aria-label="Side">
+                  <div class="web-side-nav-wrapper">
+                     <button class="web-input-text web-is-not-desktop"><span class="web-icon-search"></span> <span class="text">Search in docs</span></button> 
+                     <div class="web-side-nav-scroll">
+                        <section class="web-side-nav-wrapper-parent"><a href="./doc.html" aria-label="go back"><span class="icon-cheveron-left" aria-hidden="true"></span></a> <span class="web-side-nav-wrapper-parent-title text-micro uppercase">Auth</span></section>
+                        <section>
+                           <h2 class="web-side-nav-header text-micro uppercase whitespace-nowrap">Getting started</h2>
+                           <ul>
+                              <li><a class="web-side-nav-button is-selected" href="./Doc_Auth.html"> <span class="text-caption flex gap-2"><span>Overview</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href="./Doc_Quick_Start.html"> <span class="text-caption flex gap-2"><span>Quick start</span> </span> </a> </li>
+                           </ul>
+                        </section>
+                        <section>
+                           <h2 class="web-side-nav-header text-micro uppercase whitespace-nowrap">Concepts</h2>
+                           <ul>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>Accounts</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>Users</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>Teams</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>Labels</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>Security</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>Tokens</span> </span> </a> </li>
+                           </ul>
+                        </section>
+                        <section>
+                           <h2 class="web-side-nav-header text-micro uppercase whitespace-nowrap">Journeys</h2>
+                           <ul>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>Email and password login</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>Phone (SMS) login</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>Magic URL login</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>Email OTP login</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>OAuth2 login</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>Anonymous login</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>JWT login</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>SSR login</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>Custom token login</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>Multi-factor authentication</span> </span> </a> </li>
+                           </ul>
+                        </section>
+                        <section>
+                           <h2 class="web-side-nav-header text-micro uppercase whitespace-nowrap">References</h2>
+                           <ul>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>Account API</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>Users API</span> </span> </a> </li>
+                              <li><a class="web-side-nav-button" href=""> <span class="text-caption flex gap-2"><span>Teams API</span> </span> </a> </li>
+                           </ul>
+                        </section>
+                     </div>
+                     <div class="web-side-nav-mobile-footer-buttons"><a class="web-button web-u-inline-width-100-percent-mobile" href="https://cloud.appwrite.io"><span class="hidden">Go to Console</span> <span >Get started</span></a> <a href="https://github.com/appwrite/appwrite" target="_blank" rel="noopener noreferrer" class="web-button is-text web-u-inline-width-100-percent-mobile"><span class="web-icon-star" aria-hidden="true"></span> <span class="text">Star on GitHub</span> <span class="web-inline-tag text-sub-body">43.9K</span></a></div>
+                  </div>
+               </nav>
+               <main class="contents" id="main">
+                  <article class="web-article contents">
+                     <header class="web-article-header">
+                        <div class="web-article-header-start web-u-cross-start flex flex-col">
+                           <a href="./doc.html" class="web-icon-button web-is-only-mobile" aria-label="previous page"><span class="icon-cheveron-left" aria-hidden="true"></span></a> 
+                           <ul class="web-metadata text-caption"> </ul>
+                           <div class="relative flex items-center">
+                              <a href="./doc.html" class="web-button is-text is-icon web-items-center web-u-size-40 web-u-translate-x-negative absolute top-0" aria-label="previous page"><span class="icon-cheveron-left web-u-font-size-24 text-primary web-is-not-mobile" aria-hidden="true"></span></a> 
+                              <h1 class="text-title font-aeonik-pro text-primary">Authentication</h1>
+                           </div>
+                        </div>
+                        <div class="web-article-header-end"></div>
+                     </header>
+                     <div class="web-article-content">
+                        <article>
+                           <p class="text-paragraph-md mb-8 ">Appwrite Authentication delivers more than just user sign up and log in. Authentication makes it easy to build secure and robust authentication with support for many different authentication methods.</p>
+                           <a class="web-link text-paragraph-md svelte-10raqug" href="">
+                              <p class="text-paragraph-md mb-8 ">Add authentication to your app in 5 minutes</p>
+                              <span class="icon-cheveron-right" style="font-size: 16px;"></span>
+                           </a>
+                           <h2 id="auth-methods" class="text-label mb-4 mt-8 text-primary web-snap-location"><a href="#auth-methods" class="">Authentication methods </a></h2>
+                           <p class="text-paragraph-md mb-8 ">Appwrite supports a variety of authentication methods to fit every app and every niche. Explore Appwrite's authentication flows.</p>
+                           <div >
+                              <ul class="web-grid-row-2">
+                                 <li>
+                                    <a href="" class="web-card is-normal" style="margin-block-end: 0px;">
+                                       <header class="flex items-baseline gap-1">
+                                          <h4 class="text-sub-body font-medium text-primary">Email and password</h4>
+                                       </header>
+                                       <p class="text-sub-body mt-1" style="margin-block: 0px;">Email and password login with just a few lines of code secured with state of the art Argon2 hashing.</p>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="" class="web-card is-normal" style="margin-block-end: 0px;">
+                                       <header class="flex items-baseline gap-1">
+                                          <h4 class="text-sub-body font-medium text-primary">Phone (SMS)</h4>
+                                       </header>
+                                       <p class="text-sub-body mt-1" style="margin-block: 0px;">Log in users without a password using their phone number and SMS verification.</p>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="" class="web-card is-normal" style="margin-block-end: 0px;">
+                                       <header class="flex items-baseline gap-1">
+                                          <h4 class="text-sub-body font-medium text-primary">Magic URL</h4>
+                                       </header>
+                                       <p class="text-sub-body mt-1" style="margin-block: 0px;">Passwordless login with a magic link sent to the user's email.</p>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="" class="web-card is-normal" style="margin-block-end: 0px;">
+                                       <header class="flex items-baseline gap-1">
+                                          <h4 class="text-sub-body font-medium text-primary">Email OTP</h4>
+                                       </header>
+                                       <p class="text-sub-body mt-1" style="margin-block: 0px;">Generate a time-based single-use password sent to the user's email.</p>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="" class="web-card is-normal" style="margin-block-end: 0px;">
+                                       <header class="flex items-baseline gap-1">
+                                          <h4 class="text-sub-body font-medium text-primary">OAuth 2</h4>
+                                       </header>
+                                       <p class="text-sub-body mt-1" style="margin-block: 0px;">Authenticate users with existing accounts from GitHub, Google, Facebook, and 30+ other providers.</p>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="" class="web-card is-normal" style="margin-block-end: 0px;">
+                                       <header class="flex items-baseline gap-1">
+                                          <h4 class="text-sub-body font-medium text-primary">Anonymous</h4>
+                                       </header>
+                                       <p class="text-sub-body mt-1" style="margin-block: 0px;">Create guest sessions for visitors and convert to full accounts when they're ready.</p>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="" class="web-card is-normal" style="margin-block-end: 0px;">
+                                       <header class="flex items-baseline gap-1">
+                                          <h4 class="text-sub-body font-medium text-primary">JWT</h4>
+                                       </header>
+                                       <p class="text-sub-body mt-1" style="margin-block: 0px;">Deligate access for a user through passing JWT tokens.</p>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="" class="web-card is-normal" style="margin-block-end: 0px;">
+                                       <header class="flex items-baseline gap-1">
+                                          <h4 class="text-sub-body font-medium text-primary">Server-side rendering (SSR)</h4>
+                                       </header>
+                                       <p class="text-sub-body mt-1" style="margin-block: 0px;">Authenticate users in server-side rendered applications.</p>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="" class="web-card is-normal" style="margin-block-end: 0px;">
+                                       <header class="flex items-baseline gap-1">
+                                          <h4 class="text-sub-body font-medium text-primary">Custom token</h4>
+                                       </header>
+                                       <p class="text-sub-body mt-1" style="margin-block: 0px;">Implement custom authentication methods like biometric and passkey login by generating custom tokens.</p>
+                                    </a>
+                                 </li>
+                                 <li>
+                                    <a href="" class="web-card is-normal" style="margin-block-end: 0px;">
+                                       <header class="flex items-baseline gap-1">
+                                          <h4 class="text-sub-body font-medium text-primary">Multifactor authentication (MFA)</h4>
+                                       </header>
+                                       <p class="text-sub-body mt-1" style="margin-block: 0px;">Implementing MFA to add extra layers of security to your app.</p>
+                                    </a>
+                                 </li>
+                              </ul>
+                           </div>
+                           <h2 id="flexible-permissions" class="text-label mb-4 mt-8 text-primary web-snap-location"><a href="#flexible-permissions" class="">Flexible permissions </a></h2>
+                           <p class="text-paragraph-md mb-8 ">When users sign up using Appwrite, their identity is automatically attached to a robust permissions system. Appwrite Authentication provides permissions for individual users and groups of users through <a class="web-link underline text-paragraph-md h" href="">teams</a> and <a class="web-link underline text-paragraph-md h" href="">labels</a>.</p>
+                           <h2 id="built-in-preferences" class="text-label mb-4 mt-8 text-primary web-snap-location"><a href="#built-in-preferences" class="">Built in preferences </a></h2>
+                           <p class="text-paragraph-md mb-8 ">Appwrite Authentication comes with built-in <a class="web-link underline text-paragraph-md " href="">preferences</a> for users to manage their account settings. Store notification settings, themes, and other user preferences to be shared across devices.</p>
+                        </article>
+                        <section class="web-content-footer">
+                           <header class="web-content-footer-header w-full">
+                              <div class="flex w-full items-center justify-between gap-8" style="flex-wrap: wrap-reverse;">
+                                 <div class="flex items-center gap-4">
+                                    <h5 class="text-body text-primary font-semibold">Was this page helpful?</h5>
+                                    <div class="flex gap-2"><button class="web-radio-button" aria-label="helpful"><span class="icon-thumb-up"></span></button> <button class="web-radio-button" aria-label="unhelpful"><span class="icon-thumb-dowm"></span></button></div>
+                                 </div>
+                                 <div class="web-content-footer-header-end">
+                                    <ul class="web-metadata text-caption">
+                                       <li><a href="https://github.com/appwrite/website/tree/main/src/routes/docs/products/auth" target="_blank" rel="noopener noreferrer" class="web-link flex items-baseline gap-1"><span class="icon-pencil-alt contents" aria-hidden="true"></span> <span>Update on GitHub</span></a></li>
+                                    </ul>
+                                 </div>
+                              </div>
+                           </header>
+                        </section>
+                     </div>
+                     <aside class="web-references-menu ps-6">
+                        <div class="web-references-menu-content">
+                           <div class="flex items-center justify-between gap-4">
+                              <h5 class="web-references-menu-title text-micro uppercase">On This Page</h5>
+                           </div>
+                           <ol class="web-references-menu-list">
+                              <li class="web-references-menu-item"><a href="#auth-methods" class="web-references-menu-link is-selected"> <span class="text-caption">Authentication methods </span></a>  </li>
+                              <li class="web-references-menu-item"><a href="#flexible-permissions" class="web-references-menu-link"> <span class="text-caption">Flexible permissions </span></a>  </li>
+                              <li class="web-references-menu-item"><a href="#built-in-preferences" class="web-references-menu-link"> <span class="text-caption">Built in preferences </span></a>  </li>
+                           </ol>
+                           <div class="border-greyscale-900/[0.04] border-t pt-5"><button class="web-link inline-flex items-center gap-2"><span class="web-icon-arrow-up" aria-hidden="true"></span> <span class="text-caption">Back to top</span></button></div>
+                        </div>
+                     </aside>
+                  </article>
+               </main>
+               <footer class="web-main-footer is-with-bg-color relative mt-8 text-sm">
+                  <div class="web-main-footer-grid-1">
+                     <ul class="web-main-footer-grid-1-column-1 flex gap-2">
+                        <li><a href="https://appwrite.io/discord" class="web-icon-button svelte-140v5l6" aria-label="Discord" target="_blank" rel="noopener noreferrer"><span class="web-icon-discord " aria-hidden="true"></span></a> </li>
+                        <li><a href="https://github.com/appwrite" class="web-icon-button " aria-label="Github" target="_blank" rel="noopener noreferrer"><span class="web-icon-github " aria-hidden="true"></span></a> </li>
+                        <li><a href="https://twitter.com/intent/follow?screen_name=appwrite" class="web-icon-button " aria-label="Twitter" target="_blank" rel="noopener noreferrer"><span class="web-icon-x " aria-hidden="true"></span></a> </li>
+                        <li><a href="https://www.linkedin.com/company/appwrite" class="web-icon-button " aria-label="LinkedIn" target="_blank" rel="noopener noreferrer"><span class="web-icon-linkedin " aria-hidden="true"></span></a> </li>
+                        <li><a href="https://www.youtube.com/c/appwrite?sub_confirmation=1" class="web-icon-button " aria-label="YouTube" target="_blank" rel="noopener noreferrer"><span class="web-icon-youtube " aria-hidden="true"></span></a> </li>
+                        <li><a href="https://app.daily.dev/squads/appwrite" class="web-icon-button " aria-label="Daily.dev" target="_blank" rel="noopener noreferrer"><span class="web-icon-daily-dev " aria-hidden="true"></span></a> </li>
+                     </ul>
+                     <div class="web-main-footer-grid-1-column-2">
+                        <button class="web-select is-colored " aria-label="Select theme">
+                           <div class="physical-select"><span class="web-icon-dark " aria-hidden="true"></span> <span>Dark</span></div>
+                           <span class="icon-cheveron-down" aria-hidden="true"></span>
+                        </button>
+                        <div class="web-select is-colored web-is-only-mobile web-u-inline-width-100-percent-mobile-break1 " style="display: none;">
+                           <span class="web-icon-dark " aria-hidden="true"></span> 
+                           <select>
+                              <option value="dark">Dark </option>
+                              <option value="light">Light </option>
+                              <option value="system">System </option>
+                           </select>
+                           <span class="icon-cheveron-down" aria-hidden="true"></span>
+                        </div>
+                     </div>
+                     <ul class="web-main-footer-grid-1-column-3 web-main-footer-links items-start">
+                        <li><a href="/discord" target="_blank" rel="noopener noreferrer">Support</a></li>
+                        <li><a href="https://appwrite.online" target="_blank" rel="noopener noreferrer">Status</a></li>
+                     </ul>
+                     <div class="web-main-footer-grid-1-column-4 web-main-footer-copyright">Copyright © 2024 Appwrite</div>
+                  </div>
+               </footer>
+            </div>
+         </div>
+      </div>
+   </body>
+</html>
